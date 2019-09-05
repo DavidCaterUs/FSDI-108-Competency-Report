@@ -1,0 +1,28 @@
+<div>
+  <h1>A-6000 Calculator</h1>
+    <h6>powered by<img src="https://www.stickpng.com/assets/images/5847ea22cef1014c0b5e4833.png" alt=""></h6>
+
+  <label>Num 1:</label>
+  <input type="number" [(ngModel)]="firstNumber" name="num1">
+  <br>
+
+  <label>Num 2:</label>
+  <input type="number" [(ngModel)]="secondNumber" name="num2">
+  <br>
+
+
+  <button (click)="sum();">+</button>
+  <button (click)="subtract();" >-</button>
+  <button (click)="multiply();">*</button>
+  <button (click)="division();">/</button>
+  <br>
+  <br>
+  <label>Res : </label>
+  <input type="number" readonly="true" [(ngModel)]="result" name="result" >
+  <br>
+
+
+<br>
+
+
+</div>

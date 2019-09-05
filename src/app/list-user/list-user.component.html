@@ -1,0 +1,22 @@
+<h3>Registered Users </h3>
+
+<table class="table table-bordered table-stripped">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>First Name</th>
+      <th>Last Name </th>
+      <th>Options</th>
+    </tr>
+  </thead>
+
+
+<tbody>
+  <tr *ngFor="let user of allUsers">
+    <td>{{ user.email }}</td>
+    <td>{{ user.firstName }}</td>
+    <td>{{ user.lastName }}</td>
+    <td> Edit | Delete </td>
+  </tr>
+</tbody>
+</table>

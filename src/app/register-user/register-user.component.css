@@ -1,0 +1,9 @@
+h3{
+  text-align:center;
+  padding-bottom: 10px;
+  border-radius: 1px solid rgb(0, 104, 189);
+}
+
+label{
+  text-align: right;
+}

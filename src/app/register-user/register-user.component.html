@@ -1,0 +1,36 @@
+<form>
+  <h3>Regsiter User</h3>
+  <hr>
+  <div class="form-group row">
+    <label for="exampleInputEmail1">First Name</label>
+    <input type="email" class="form-control"  placeholder="Enter First Name" [(ngModel)]="model.firstName" name="firstName">
+  </div>
+  <div class="form-group row">
+    <label for="exampleInputEmail1">Last Name</label>
+    <input type="email" class="form-control"  placeholder="Enter Last Name" [(ngModel)]="model.lastName" name="lastName">
+  </div>
+  <div class="form-group row">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control"  placeholder="Enter email"  [(ngModel)]="model.email" name="email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div *ngIf="errorOnEmail" class="alert alert-danger">
+      Email is required!
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control"  placeholder="Password" [(ngModel)]="model.password" name="password">
+  </div>
+  <div class="form-group row">
+    <label for="exampleInputPassword1">Re-type Password</label>
+    <input type="password" class="form-control" [(ngModel)]="passRetype" name="pass2">
+
+
+    <div *ngIf="passDontMatch" class="alert alert-danger">
+      Password do not match, please verify
+    </div>
+  </div>
+
+
+  <button type="submit" (click)="saveUser()" class="btn btn-primary">Resgister User</button>
+</form>
